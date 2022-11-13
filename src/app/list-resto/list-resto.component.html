@@ -1,0 +1,37 @@
+ <br>
+ <h3 [ngClass]="'c1'" [ngStyle]="{'text-decoration': 'underline'}">Restaurant List</h3>
+<br>
+ <div class="table-responsive text-nowrap"> 
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">NAME</th>
+        <th scope="col">ADDRESS</th>
+        <th scope="col">EMAIL</th>
+        <th scope="col">OPERATIONS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of collection">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.address}}</td>
+        <td>{{item.email}}</td>
+        <td><i (click)="deleteResto(item.id)" class="fa fa-close" style="font-size:24px;color:red"></i>
+        <a routerLink="/update/{{item.id}}"><i class="fa fa-edit" style="font-size:24px;color:blue"></i></a>
+        <a routerLink="/view/{{item.id}}"><i class="fa fa-eye" style="font-size:24px;color:black"></i></a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-head [hero]="det"></app-head>
+
+<app-ctop (parentFunction)="parentFunction($event)"></app-ctop>
+<p>{{name}}</p>
+<span>{{a}}</span>
+
+
+
+

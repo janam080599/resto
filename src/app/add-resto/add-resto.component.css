@@ -1,0 +1,29 @@
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched{
+    border-left: 5px solid red;
+}
+
+input.ng-valid, textarea.ng-valid{
+    border-left: 5px solid green;
+}
+input.ng-untouched.ng-invalid,textarea.ng-untouched.ng-invalid{
+    border-left: 5px solid blue;
+}
+.error{
+    color:red;
+}
+.container{
+    width: 30%;
+    position: relative;
+}
+.buttons{
+    margin: 0;
+    position: absolute;
+    top:110%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+p{
+    padding: 1px;
+    margin-bottom: 0px;
+}

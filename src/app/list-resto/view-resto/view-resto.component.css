@@ -1,0 +1,48 @@
+.flex-container {
+    display: flex;
+    background-color: gainsboro;
+  justify-content: center;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  img{
+    width:100%;
+    max-width:1200px;
+    max-height: 500px;
+}
+
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+  .view{
+      width: 75%;
+      padding-left: 50px;
+      
+  }
+  @media (max-width: 800px) {
+    .view {
+      width:30%;
+    }
+    img{
+        max-height: 200px;
+    }
+  }
+
+  .cancel{
+      text-align: center;
+      margin-top: 5px;
+  }
+
+  button{
+      background-color: gray;
+      color: #f1f1f1;
+  }
